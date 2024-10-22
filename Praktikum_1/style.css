@@ -1,0 +1,18 @@
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; 
+}
+
+.avatar img {
+    width: 250px; 
+    height: auto;
+    border-radius: 50%; 
+}
+
+.deskripsi {
+    margin-top: 10px;
+    max-width: 900px;
+}

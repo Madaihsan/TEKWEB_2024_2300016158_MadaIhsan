@@ -1,0 +1,200 @@
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #232323;
+    --text-color: white;
+    --main-color: #ea580c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Jarak antar elemen */
+    /* min-height: 100vh; */
+    width: 800px;
+    margin: 20px auto;
+    padding: 0 20px 20px 40px; /* Jarak dalam body, bisa disesuaikan */
+    border: 5px solid black;
+    background-color: var(--bg-color);
+    font-family: "Poppins";
+    border: 5px solid white;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    padding: 70px;           /* Tambahkan padding untuk jarak dari border body */
+    margin-bottom: 40px;     /* Tambah jarak ke bawah, yaitu About */
+}
+
+.avatar img {
+    display: block;
+    max-width: 100%;
+    width: 250px; /* Ukuran gambar */
+    height: auto;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+.avatar img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
+.about {
+    margin-top: 20px;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: left;
+}
+
+ul {
+    list-style: none;   /* Removes bullet points */
+    padding: 0;         /* Removes default padding */
+}
+
+.Project a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.Project a:hover {
+    text-decoration: underline;
+    color: wheat;
+}
+
+.About {
+    background-color: var(--main-color);
+    padding: 0 auto;
+    border: 5px solid black;
+    margin-bottom: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.About h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Project h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Contact h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.About h1, p {
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.Project {
+    background-color: var(--main-color);
+    padding: 0 auto;
+    border: 5px solid;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.Project ul li {
+    background-color: #cfcfcf;
+    padding: 5px;
+    
+}
+
+.Contact {
+    background-color: var(--main-color);
+    padding: 0 auto;
+    border: 5px solid;
+    padding-left: 20px;
+    padding-right: 10px;
+    transition: 0.4s ease-in-out;
+    margin: 5px 0;
+    align-items: center;
+    display: grid;
+}
+
+.Contact p {
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Menyejajarkan elemen secara vertikal */
+    margin: 5px 0; /* Jarak vertikal antara <p> */
+}
+
+.Contact a {
+    text-decoration: none; /* Menghilangkan underline */
+    color: inherit; /* Menggunakan warna teks yang sama dengan elemen induk */
+}
+.Contact a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.label {
+    width: 100px; /* Menetapkan lebar tetap untuk label */
+    text-align: right; /* Menyejajarkan teks ke kanan */
+    margin-right: 10px; /* Jarak antara label dan teks */
+}
+
+.About:hover {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid --main-color;
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
+.Project:hover {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid --main-color;
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
+.Contact:hover {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid --main-color;
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
+.Contact a{
+    color: inherit;
+}
+
+.Project ul li {
+    background-color: var(--text-color);
+    color: var(--main-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--bg-color);
+    border-left: 5px solid var(--bg-color);
+    transition: 0.4s ease-in-out;
+}
+
+.Project ul li:hover {
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    border: 1px solid var(--text-color);
+    border-left: 5px solid var(--text-color);
+    transition: 0.4s ease-in-out;
+}
