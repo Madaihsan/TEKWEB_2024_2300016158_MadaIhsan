@@ -11,7 +11,7 @@ body {
     align-items: center;
     gap: 40px; /* Jarak antar elemen */
     /* min-height: 100vh; */
-    width: 800px;
+    width: 70%;
     margin: 20px auto;
     padding: 0 20px 20px 40px; /* Jarak dalam body, bisa disesuaikan */
     border: 5px solid black;
@@ -63,10 +63,12 @@ body {
     border: 5px solid;
     margin-bottom: 20px;
     transition: 0.4s ease-in-out;
+    margin-right: 20px;
 }
 
 .about {
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .About h1 {
@@ -121,6 +123,7 @@ ul {
     padding-right: 10px;
     transition: 0.4s ease-in-out;
     text-align: center;
+    margin-right: 20px;
 }
 .Project ul li {
     background-color: var(--text-color);
@@ -245,6 +248,7 @@ h1 {
     margin: 5px 0;
     align-items: center;
     display: grid;
+    margin-right: 20px;
 }
 
 .Contact p {
