@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="gaya.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,6 +11,29 @@
         <div class="avatar">
             <img src="foto.jpg" alt="">
         </div>
+        <div class="controls">
+            <!-- <label for="background-color-1">Change Background Color: </label> -->
+            <select id="background-color-1">
+                <option value="white">White</option>
+                <option value="Black">Black</option>
+                <option value="lightblue">Light Blue</option>
+                <option value="lightgreen">Light Green</option>
+                <option value="lightgray">Light Gray</option>
+                <option value="yellow">Yellow</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+            </select>   
+            <input type="range" id="font-size-slider" min="12" max="40" value="16">
+            <button id="toggle-dark-mode">Dark Mode</button>
+            <select id="change-font">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+        </div>
+        
 
         <div class="About">
             <h1>About Me</h1>
@@ -19,23 +42,28 @@
 
         <div class="Project">
             <h1>Projects</h1>
-            <ul>
+            <!-- <ul>
                 <li> <a href="https://scratch.mit.edu/projects/948807316">Projects 1</a> - Create a game in Scratch</li>
                 <li> <a href="https://scratch.mit.edu/projects/910405815">Projects 2</a> - Create a game in Scratch</li>
                 <li> <a href="https://scratch.mit.edu/projects/917557555">Projects 3</a> - Create a animation in Scratch</li>
+            </ul> -->
+            <ul id="project-list">
+                <li><a href="https://scratch.mit.edu/projects/948807316" target="_blank">Project 1</a> <button class="edit">Edit</button> <button class="delete">Delete</button></li>
+                <li><a href="https://scratch.mit.edu/projects/910405815" target="_blank">Project 2</a> <button class="edit">Edit</button> <button class="delete">Delete</button></li>
+                <li><a href="https://scratch.mit.edu/projects/917557555" target="_blank">Project 3</a> <button class="edit">Edit</button> <button class="delete">Delete</button></li>
             </ul>
+            <button id="add-project">+</button>
         </div>
 
         <div class="Contact">
             <h1>Contact</h1>
-            <p><span class="label">Email:</span> madaihsan123@gmail.com</p>
-            <p><span class="label">Instagram:</span> <a href="https://www.instagram.com/madaihsan_?igsh=MTQyYmVyNGNsbmY0Yg==">Madaihsan_</a></p>
-            <p><span class="label">GitHub:</span> <a href="https://github.com/">MadaIhsan</a></p>
-            <p><span class="label">Linkedin:</span> <a href="https://www.linkedin.com/in/mada-ihsan-133938276/">madaihsan</a></p>
+            <p><span class="label">Email</span> <span class="pemisah"> : </span> madaihsan123@gmail.com</p>
+            <p><span class="label">Instagram</span> <span class="pemisah"> : </span> <a href="https://www.instagram.com/madaihsan_?igsh=MTQyYmVyNGNsbmY0Yg==">Madaihsan_</a></p>
+            <p><span class="label">GitHub</span> <span class="pemisah"> : </span> <a href="https://github.com/">MadaIhsan</a></p>
+            <p><span class="label">Linkedin</span> <span class="pemisah"> : </span> <a href="https://www.linkedin.com/in/mada-ihsan-133938276/">madaihsan</a></p>
         </div>
 
-
-        <script src="script.js"></script>
     </nav>
+    <script src="script.js"></script>
 </body>
 </html>
