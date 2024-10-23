@@ -44,12 +44,35 @@ body {
                 0 0 100px var(--main-color);
 }
 
-
-/* STYLE ABOUT */
 .about {
     margin-top: 20px;
 }
 
+p, li {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: left;
+}
+
+ul {
+    list-style: none;   /* Removes bullet points */
+    padding: 0;         /* Removes default padding */
+}
+
+.Project a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.Project a:hover {
+    text-decoration: underline;
+    color: wheat;
+}
 
 .About {
     background-color: var(--main-color);
@@ -64,37 +87,21 @@ body {
     margin-top: 10px;
 }
 
+.Project h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Contact h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .About h1, p {
     margin-left: 10px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
-}
-
-.About:hover {
-    background: var(--second-bg-color);
-    color: var(--main-color);
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-    transition: 0.4s ease-in-out;
-}
-
-/* STYLE PROJECT */
-
-
-.Project a{
-    color: inherit;
-    text-decoration: none;
-}
-
-.Project a:hover {
-    text-decoration: underline;
-    color: wheat;
-}
-
-.Project h1 {
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .Project {
@@ -111,46 +118,6 @@ body {
     background-color: #cfcfcf;
     padding: 5px;
     
-}
-
-.Project:hover {
-    background: var(--second-bg-color);
-    color: var(--main-color);
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-    transition: 0.4s ease-in-out;
-}
-
-
-.Project ul li {
-    background-color: var(--text-color);
-    color: var(--main-color);
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid var(--bg-color);
-    border-left: 5px solid var(--bg-color);
-    transition: 0.4s ease-in-out;
-}
-
-.Project ul li:hover {
-    background-color: var(--main-color);
-    color: var(--second-bg-color);
-    border: 1px solid var(--text-color);
-    border-left: 5px solid var(--text-color);
-    transition: 0.4s ease-in-out;
-}
-
-
-ul {
-    list-style: none;   /* Removes bullet points */
-    padding: 0;         /* Removes default padding */
-}
-
-/* STYLE CONTACT */
-
-.Contact h1 {
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .Contact {
@@ -186,6 +153,22 @@ ul {
     margin-right: 10px; /* Jarak antara label dan teks */
 }
 
+.About:hover {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
+.Project:hover {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
 .Contact:hover {
     background: var(--second-bg-color);
     color: var(--main-color);
@@ -198,16 +181,20 @@ ul {
     color: inherit;
 }
 
-
-p, li {
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 1px;
+.Project ul li {
+    background-color: var(--text-color);
+    color: var(--main-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--bg-color);
+    border-left: 5px solid var(--bg-color);
+    transition: 0.4s ease-in-out;
 }
 
-h1 {
-    font-size: 50px;
-    text-align: left;
+.Project ul li:hover {
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    border: 1px solid var(--text-color);
+    border-left: 5px solid var(--text-color);
+    transition: 0.4s ease-in-out;
 }
-
-
