@@ -1,4 +1,3 @@
-<h1>Link Praktikum</h1>
 ### Visit Site Praktikum 1:
 - https://madaihsan.github.io/TEKWEB_2024_2300016158_MadaIhsan/Praktikum_1/
 ### Visit Site Praktikum 2:
