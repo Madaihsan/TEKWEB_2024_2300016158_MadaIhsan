@@ -17,7 +17,7 @@ body {
     border: 5px solid black;
     background-color: var(--bg-color);
     font-family: "Poppins";
-    border: 5px solid white;
+    border: 5px solid var(--main-color);
 }
 
 .avatar {
@@ -156,7 +156,7 @@ ul {
 .About:hover {
     background: var(--second-bg-color);
     color: var(--main-color);
-    border: 5px solid --main-color;
+    border: 5px solid var(--main-color);
     transform: scale(1.03);
     transition: 0.4s ease-in-out;
 }
@@ -164,7 +164,7 @@ ul {
 .Project:hover {
     background: var(--second-bg-color);
     color: var(--main-color);
-    border: 5px solid --main-color;
+    border: 5px solid var(--main-color);
     transform: scale(1.03);
     transition: 0.4s ease-in-out;
 }
@@ -172,7 +172,7 @@ ul {
 .Contact:hover {
     background: var(--second-bg-color);
     color: var(--main-color);
-    border: 5px solid --main-color;
+    border: 5px solid var(--main-color);
     transform: scale(1.03);
     transition: 0.4s ease-in-out;
 }
