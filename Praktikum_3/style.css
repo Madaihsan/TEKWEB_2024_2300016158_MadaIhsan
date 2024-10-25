@@ -97,8 +97,8 @@ body {
 
 
 ul {
-    list-style: none;   /* Removes bullet points */
-    padding: 0;         /* Removes default padding */
+    list-style: none;   
+    padding: 0;       
 }
 
 .Project h1 {
@@ -159,9 +159,13 @@ ul {
 .delete {
     background-color: red;
 }
-.edit:hover, .delete:hover {
-    background-color: var(--bg-color); /* Warna latar belakang saat hover */
-    color: var(--text-color); /* Ganti warna teks jika diperlukan */
+.edit:hover {
+    background-color: darkgreen; 
+    color: var(--text-color); 
+}
+.delete:hover {
+    background-color: darkred; 
+    color: var(--text-color);
 }
 
 button#add-project {
@@ -290,51 +294,99 @@ h1 {
     color: inherit;
 }
 
+/* STYLE TODO-LIST */
 
-/* 
-.Project ul li {
-    background-color: #cfcfcf;
-    padding: 5px;
-    
-} */
+.ToDo {
+    background-color: var(--main-color);
+    padding: 0 auto;
+    border: 5px solid;
+    padding-left: 20px;
+    padding-right: 10px;
+    transition: 0.4s ease-in-out;
+    margin: 5px 0;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 
 
-/* .Project ul li {
+.ToDo h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.ToDo:hover {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid --main-color;
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
+.Contact {
+    background-color: var(--main-color);
+    padding: 0 auto;
+    border: 5px solid;
+    padding-left: 20px;
+    padding-right: 10px;
+    transition: 0.4s ease-in-out;
+    margin: 5px 0;
+    align-items: center;
+    display: grid;
+    margin-right: 20px;
+}
+
+.ToDo h1 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+#todo-input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 5px; /* Memberikan jarak antara input dan tombol */
+}
+
+#add-todo {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#add-todo:hover {
+    background-color: darkgreen;
+}
+
+ul {
+    list-style: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding */
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center; /* Menyelaraskan item di tengah */
+    justify-content: space-between; /* Menyebar item antara kiri dan kanan */
+    padding: 10px;
     background-color: var(--text-color);
     color: var(--main-color);
-    padding: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: 1px solid var(--bg-color);
     border-left: 5px solid var(--bg-color);
     transition: 0.4s ease-in-out;
-} */
+}
+
+#todo-list li input.check-task {
+    margin-right: 15px; /* Jarak antara checkbox dan tulisan */
+}
 
 
-/* button#add-project {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: ;
-    color: var(--text-color);
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-} */
+#todo-list li.completed {
+    text-decoration: line-through;
+    color: lightgray; /* Mengubah warna teks yang telah selesai */
+}
 
-/* button#add-project {
-    width: 40px;
-    height: 40px;
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-    align-items: center;
-    background-color: grey;
-    color: var(--text-color);
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    border-radius: 50%;
-} */
+#todo-list li.completed button {
+    text-decoration: none; /* Pastikan tombol tidak terpengaruh */
+}

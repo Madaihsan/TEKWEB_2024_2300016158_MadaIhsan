@@ -85,3 +85,60 @@ document.querySelectorAll('.Project ul li').forEach(li => {
         li.remove();
     });
 });
+const todoInput = document.getElementById('todo-input');
+const addTodoButton = document.getElementById('add-todo');
+const todoList = document.getElementById('todo-list');
+
+addTodoButton.addEventListener('click', function() {
+    const task = todoInput.value.trim();
+
+    if (!task) {
+        alert("Inputan tidak boleh kosong!"); // Tampilkan alert jika inputan kosong
+        return;
+    }
+
+    const li = document.createElement('li');
+    li.innerHTML = `
+        <input type="checkbox" class="check-task">
+        <span>${task}</span>
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+    `;
+
+    // Menambahkan fungsi checklist
+    li.querySelector('.check-task').addEventListener('change', function() {
+        li.classList.toggle('completed'); // Tambah class completed untuk coret
+    });
+
+    // Menambahkan fungsi edit
+    li.querySelector('.edit').addEventListener('click', function() {
+        const newTask = prompt('Edit task:', task);
+        if (newTask) {
+            li.querySelector('span').textContent = newTask;
+        }
+    });
+
+    // Menambahkan fungsi edit pada double-click
+    li.querySelector('span').addEventListener('dblclick', function() {
+        editTask(li.querySelector('span'));
+    });
+
+    // Menambahkan fungsi delete
+    li.querySelector('.delete').addEventListener('click', function() {
+        li.remove();
+    });
+
+    todoList.appendChild(li); // Menambahkan item baru ke daftar
+    todoInput.value = ''; // Mengosongkan input setelah menambah tugas
+
+    // Fungsi untuk mengedit tugas
+    function editTask(element) {
+    const currentTask = element.textContent; // Ambil teks saat ini
+    const newTask = prompt('Edit task:', currentTask); // Tanyakan untuk nama tugas baru
+
+    if (newTask && newTask.trim() !== '') { // Pastikan input tidak kosong
+        element.textContent = newTask; // Update teks dengan tugas baru
+    }
+}
+});
+
