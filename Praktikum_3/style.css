@@ -9,11 +9,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* Jarak antar elemen */
-    /* min-height: 100vh; */
+    gap: 40px; 
     width: 70%;
     margin: 20px auto;
-    padding: 0 20px 20px 40px; /* Jarak dalam body, bisa disesuaikan */
+    padding: 0 20px 20px 40px; 
     border: 5px solid black;
     background-color: var(--bg-color);
     font-family: "Poppins";
