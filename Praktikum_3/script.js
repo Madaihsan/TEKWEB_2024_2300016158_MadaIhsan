@@ -128,16 +128,15 @@ addTodoButton.addEventListener('click', function() {
         li.remove();
     });
 
-    todoList.appendChild(li); // Menambahkan item baru ke daftar
-    todoInput.value = ''; // Mengosongkan input setelah menambah tugas
+    todoList.appendChild(li); 
+    todoInput.value = ''; 
 
     // Fungsi untuk mengedit tugas
     function editTask(element) {
-    const currentTask = element.textContent; // Ambil teks saat ini
-    const newTask = prompt('Edit task:', currentTask); // Tanyakan untuk nama tugas baru
-
-    if (newTask && newTask.trim() !== '') { // Pastikan input tidak kosong
-        element.textContent = newTask; // Update teks dengan tugas baru
+    const currentTask = element.textContent; 
+    const newTask = prompt('Edit task:', currentTask); 
+    if (newTask && newTask.trim() !== '') { 
+        element.textContent = newTask; 
     }
 }
 });
